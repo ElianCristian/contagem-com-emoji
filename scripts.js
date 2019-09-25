@@ -19,8 +19,9 @@ function Contar() {
     else if(inicio > final){
         resultado.innerHTML = 'Contando: '
         for (var i = inicio; i >= final; i -= passo) {
-            resultado.innerHTML += `[${i}]`
+            resultado.innerHTML += `[${i}]\u{27A1}`
         }
+        resultado.innerHTML += `\u{1F3C1}`
     }
     
 }

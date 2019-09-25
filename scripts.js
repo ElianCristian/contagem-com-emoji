@@ -7,13 +7,14 @@ function Contar() {
     var passo = Number(pass.value)
     var resultado = document.getElementById('res')
     if(inicio == '' || fim == '' || passo == ''){
-        alert('Você deixou campo vazio. Preencha os campos corretamente!')
+        resultado.innerHTML = 'Você deixou campo vazio. Preencha os campos corretamente!'
     }
     else if (inicio < final) {
         resultado.innerHTML = 'Contando: '
         for (var i = inicio; i <= final; i += passo) {
-            resultado.innerHTML += `[${i}]`
+            resultado.innerHTML += `[${i}]\u{27A1}`
         }
+        resultado.innerHTML += `\u{1F3C1}`
     }
     else if(inicio > final){
         resultado.innerHTML = 'Contando: '

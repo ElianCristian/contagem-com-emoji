@@ -10,14 +10,14 @@ function Contar() {
         resultado.innerHTML = 'Você deixou campo vazio. Preencha os campos corretamente!'
     }
     else if (inicio < final) {
-        resultado.innerHTML = 'Contando: '
+        resultado.innerHTML = 'Contando: <br>'
         for (var i = inicio; i <= final; i += passo) {
             resultado.innerHTML += `[${i}]\u{27A1}`
         }
         resultado.innerHTML += `\u{1F3C1}`
     }
     else if(inicio > final){
-        resultado.innerHTML = 'Contando: '
+        resultado.innerHTML = 'Contando: <br>'
         for (var i = inicio; i >= final; i -= passo) {
             resultado.innerHTML += `[${i}]\u{27A1}`
         }
